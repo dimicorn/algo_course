@@ -1,28 +1,33 @@
-#include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 
-// or make max and smax minimum of nums
-int second_max(vector<int>& nums) {
-	int max = INT_MIN;
-	int smax = INT_MIN;
-	if (nums.size() == 1) {
+int second_max(int n, int* nums) {
+	int max = nums[0];
+	int smax = nums[0];
+	if (n == 1) {
 		return -1;
 	}
-	for (auto &i : nums) {
-		if (i > max) {
+	for (int i = 0; i < n; ++i) {
+		if (nums[i] > max) {
 			smax = max;
-			max = i;
-		} else if (i > smax) {
-			smax = i;
+			max = nums[i];
+		} else if (nums[i] > smax) {
+			smax = nums[i];
 		}
 	}
 	return smax;
 }
 
-int main(int argc, char* argv[]) {
-	vector<int> nums = {3, 6, 1, 9, 11, 5};
-	cout << second_max(nums) << '\n';
+int main() {
+	int n;
+	cin >> n;
+	int arr[n];
+	for (int i = 0; i < n; ++i) {
+		cin >> arr[i];
+	}
+
+	cout << second_max(n, arr) << '\n';
 	
 	return 0;
 }

@@ -10,7 +10,7 @@ Main purpose of this course is to master effective algorithms to solve coding pr
 5. O(n^2) sorts
 6. O(n*log(n)) sorts
 7. Linear sort
-8. Gready-algorithms
+8. Greedy-algorithms
 9. Dynamic programming 1D
 10. Dynamic programming 2D
 11. Strings
