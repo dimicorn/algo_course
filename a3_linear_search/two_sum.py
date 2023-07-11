@@ -1,6 +1,6 @@
-def two_sum(nums, sum):
+def two_sum(n: int, nums: list, sum: int)->tuple[int, int]:
     l = 0
-    r = len(nums) - 1
+    r = n - 1
     while l < r:
         if nums[l] + nums[r] == sum:
             return l, r
@@ -11,8 +11,6 @@ def two_sum(nums, sum):
     return -1, -1
 
 
-nums = [1, 3, 4, 6, 7, 10]
-sum1 = 14
-sum2 = 20
-print(two_sum(nums, sum1))
-print(two_sum(nums, sum2))
+n, sum = map(int, input().split())
+nums = list(map(int, input().split()))
+print(two_sum(n, nums, sum))
