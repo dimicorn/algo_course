@@ -1,20 +1,17 @@
-def binary_search(nums, target):
+def binary_search(n: int, arr: list, target: int)->int:
     l = 0
-    r = len(nums) - 1
+    r = n - 1
     while l <= r:
         m = (l + r) // 2
-        if nums[m] == target:
+        if arr[m] == target:
             return m
-        elif nums[m] < target:
+        elif arr[m] < target:
             l = m + 1
         else:
             r = m - 1
     return -1
 
 
-nums = [1, 5, 6, 8, 10]
-target1 = 1
-target2 = 2
-
-print(binary_search(nums, target1))
-print(binary_search(nums, target2))
+n, target = map(int, input().split())
+arr = list(map(int, input().split()))
+print(binary_search(n, arr, target))

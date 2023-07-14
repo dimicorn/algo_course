@@ -1,28 +1,30 @@
-#include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 
-void bubble_sort(vector<int>& nums) {
-	for (auto &i : nums) {
-		for (auto &j : nums) {
-			if (i < j) {
-				swap(i, j);
+void bubble_sort(int n, int* arr) {
+	for (int i = 0; i < n; ++i) {
+		for (int j = 0; j < n; ++j) {
+			if (arr[i] < arr[j]) {
+				swap(arr[i], arr[j]);
 			}
 		}
 	}
 }
 
-void print(vector<int>& nums) {
-	for (auto &i : nums) {
-		cout << i << ' ';
+int main() {
+	int n;
+	cin >> n;
+	int* arr = new int[n];
+	for (int i = 0; i < n; ++i) {
+		cin >> arr[i];
+	}
+	bubble_sort(n, arr);
+	for (int i = 0; i < n; ++i) {
+		cout << arr[i] << ' ';
 	}
 	cout << '\n';
-}
 
-int main(int argc, char* argv[]) {
-	vector<int> nums = {2, 8, 6, 4, 1};
-	print(nums);
-	bubble_sort(nums);
-	print(nums);
+	delete [] arr;
 	return 0;
 }

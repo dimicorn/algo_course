@@ -1,16 +1,16 @@
-#include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 
-int binary_search(vector<int>& nums, int target) {
+int binary_search(int n, int* arr, int target) {
     int l = 0;
-    int r = nums.size() - 1;
+    int r = n - 1;
     int m;
     while (l <= r) {
         m = (r + l) / 2;
-        if (nums[m] == target) {
+        if (arr[m] == target) {
             return m;
-        } else if (nums[m] < target) {
+        } else if (arr[m] < target) {
             l = m + 1;
         } else {
             r = m - 1;
@@ -19,12 +19,16 @@ int binary_search(vector<int>& nums, int target) {
     return -1;
 }
 
-int main(int argc, char* argv[]) {
-    vector<int> nums = {1, 5, 6, 8, 10};
-    int target1 = 1;
-    int target2 = 2;
+int main() {
+    int n, target;
+    cin >> n >> target;
+    int* arr = new int[n];
+    for (int i = 0; i < n; ++i) {
+        cin >> arr[i];
+    }
 
-    cout << binary_search(nums, target1) << '\n';
-    cout << binary_search(nums, target2) << '\n';
+    cout << binary_search(n, arr, target) << '\n';
+
+    delete [] arr;
     return 0;
 }

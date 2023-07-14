@@ -1,11 +1,11 @@
-def bubble_sort(nums):
-    for i in range(len(nums)):
-        for j in range(len(nums)):
-            if nums[i] < nums[j]:
-                nums[i], nums[j] = nums[j], nums[i]
+def bubble_sort(n: int, arr: list)->None:
+    for i in range(n):
+        for j in range(n):
+            if arr[i] < arr[j]:
+                arr[i], arr[j] = arr[j], arr[i]
 
 
-nums = [2, 8, 6, 4, 1]
-print(nums)
-bubble_sort(nums)
-print(nums)
+n = int(input())
+arr = list(map(int, input().split()))
+bubble_sort(n, arr)
+print(arr)

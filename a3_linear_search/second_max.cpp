@@ -22,12 +22,13 @@ int second_max(int n, int* nums) {
 int main() {
 	int n;
 	cin >> n;
-	int arr[n];
+	int* arr = new int[n];
 	for (int i = 0; i < n; ++i) {
 		cin >> arr[i];
 	}
 
 	cout << second_max(n, arr) << '\n';
 	
+	delete [] arr;
 	return 0;
 }
