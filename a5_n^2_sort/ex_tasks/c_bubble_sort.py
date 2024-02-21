@@ -1,4 +1,4 @@
-def bubble_sort(n: int, arr: list)->None:
+def bubble_sort(n: int, arr: list) -> None:
     for i in range(n):
         for j in range(n):
             if arr[i] < arr[j]:

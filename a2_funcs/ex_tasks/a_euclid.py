@@ -1,4 +1,4 @@
-def gcd_recursive(a: int, b: int)->int:
+def gcd_recursive(a: int, b: int) -> int:
     if b > a:
         a, b = b, a
     if a == 0 and b == 0:

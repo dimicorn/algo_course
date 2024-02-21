@@ -1,4 +1,4 @@
-def two_sum(n: int, nums: list, sum: int)->tuple[int, int]:
+def two_sum(n: int, nums: list, sum: int) -> tuple:
     l = 0
     r = n - 1
     while l < r:

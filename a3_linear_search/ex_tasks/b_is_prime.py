@@ -1,4 +1,4 @@
-def is_prime(x: int)->bool:
+def is_prime(x: int) -> bool:
     if x == 1:
         return False
     i = 2

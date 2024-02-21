@@ -1,4 +1,4 @@
-def second_max(n: int, nums: list)->int:
+def second_max(n: int, nums: list) -> int:
     m = nums[0]
     sm = nums[0]
     for i in range(n):

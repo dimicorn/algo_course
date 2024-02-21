@@ -1,4 +1,4 @@
-def insertion_sort(n: int, arr: list)->None:
+def insertion_sort(n: int, arr: list) -> None:
     i = 1
     while i < n:
         j = i

@@ -1,4 +1,4 @@
-def fib_recursive(n: int)->int:
+def fib_recursive(n: int) -> int:
     if n == 0:
         return 0
     elif n == 1:

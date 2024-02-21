@@ -1,4 +1,4 @@
-def partition(l: int, r: int, arr: list)->int:
+def partition(l: int, r: int, arr: list) -> int:
     pivot = arr[r]
     i = l
     for j in range(l, r):
@@ -8,7 +8,7 @@ def partition(l: int, r: int, arr: list)->int:
     arr[i], arr[r] = arr[r], arr[i]
     return i
 
-def quick_sort(l: int, r: int, arr: list)->None:
+def quick_sort(l: int, r: int, arr: list) -> None:
     if l >= r or l < 0:
         return
     ind = partition(l, r, arr)

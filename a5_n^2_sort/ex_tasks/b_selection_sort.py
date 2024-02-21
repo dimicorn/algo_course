@@ -1,4 +1,4 @@
-def selection_sort(n: int, arr: list)->None:
+def selection_sort(n: int, arr: list) -> None:
     for i in range(n-1):
         min = arr[i]
         ind = i

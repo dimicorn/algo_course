@@ -5,10 +5,10 @@ Main purpose of this course is to master effective algorithms to solve coding pr
 ### Algorithms
 1. Introduction
 2. Functions & Recursion
-3. Loops & Linear search
+3. Linear search
 4. Prefix array
-5. O(n^2) sorts
-6. O(n*log(n)) sorts
+5. $O(n^2)$ sorts
+6. $O(n\log{n})$ sorts
 7. Linear sort
 8. Greedy-algorithms
 9. Dynamic programming 1D
@@ -21,6 +21,8 @@ Main purpose of this course is to master effective algorithms to solve coding pr
 3. Sets & Hash Maps
 4. Heap
 5. Binary Sort Trees
-6. Graphs
+6. Graphs I
+7. Graphs II
+8. Spanning Trees
 
 For any questions zagorulia.ds at phystech.edu or what_is_spin in Telegram.
