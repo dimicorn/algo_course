@@ -5,15 +5,16 @@ Main purpose of this course is to master effective algorithms to solve coding pr
 ### Algorithms
 1. Introduction
 2. Functions & Recursion
-3. Linear search
-4. Prefix array
-5. $O(n^2)$ sorts
-6. $O(n\log{n})$ sorts
-7. Linear sort
-8. Greedy-algorithms
-9. Dynamic programming 1D
-10. Dynamic programming 2D
-11. Strings
+3. Linear Search & Two Pointers
+4. Prefix Sum \& Sliding Window
+5. $O(n^2)$ Sorts
+6. $O(n\log{n})$ Sorts
+7. Linear Sorts
+8. Divide and Conquer
+9. Greedy Algorithms
+10. Dynamic Programming 1D
+11. Dynamic Programming 2D
+12. Strings
 
 ### Data Structures
 1. Array, Vector, List
