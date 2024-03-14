@@ -13,4 +13,4 @@ def selection_sort(n: int, arr: list) -> None:
 n = int(input())
 arr = list(map(int, input().split()))
 selection_sort(n, arr)
-print(arr)
+print(*arr)

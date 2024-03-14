@@ -1,4 +1,4 @@
-def generate(arr: list, t: int = 0):
+def generate(arr: list, t: int = 0) -> None:
     n = len(arr)
     if t == n - 1:
         print(*arr)

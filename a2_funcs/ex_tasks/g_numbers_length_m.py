@@ -1,8 +1,7 @@
-def generate_number(n: int, m: int, prefix=None):
+def generate_number(n: int, m: int, prefix=None) -> None:
     prefix = prefix or []
     if m == 0:
         print(*prefix)
-        return
     
     for digit in range(n):
         prefix.append(digit)

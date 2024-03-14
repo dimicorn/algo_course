@@ -11,4 +11,4 @@ def insertion_sort(n: int, arr: list) -> None:
 n = int(input())
 arr = list(map(int, input().split()))
 insertion_sort(n, arr)
-print(arr)
+print(*arr)
